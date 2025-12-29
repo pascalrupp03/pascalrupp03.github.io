@@ -5,9 +5,7 @@ body { margin: 0; background: var(--bg); line-height: 1.6; }
 .topbar { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; gap: 1rem; justify-content: space-between; padding: 1rem 2rem; background: #fff; border-bottom: 1px solid #d8e3ea; }
 nav ul { margin: 0; padding: 0; list-style: none; display: flex; gap: 1rem; flex-wrap: wrap; }
 nav a { color: var(--ink); text-decoration: none; font-weight: 600; padding: 0.5rem; min-height: 44px; display: inline-flex; align-items: center; }
-.nav-toggle { display: none; background: none; border: 2px solid var(--ink); padding: 0.5rem 0.75rem; border-radius: 6px; cursor: pointer; font-size: 1.25rem; line-height: 1; min-width: 44px; min-height: 44px; }
-.nav-toggle:hover { background: var(--muted); }
-.nav-toggle:focus { outline: 3px solid #2e9fff; outline-offset: 2px; }
+
 .brand { display: inline-flex; align-items: center; gap: 0.5rem; }
 .hero { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; padding: 3rem 2rem; align-items: center; }
 .hero img, .ui-mock { max-width: 100%; border-radius: var(--radius); box-shadow: 0 10px 40px rgba(0,0,0,0.08); }
@@ -32,90 +30,29 @@ input:focus, textarea:focus, button:focus, a:focus { outline: 3px solid #2e9fff;
 .skip-link { position: absolute; left: -999px; top: -999px; }
 .skip-link:focus { left: 1rem; top: 1rem; background: #fff; padding: 0.5rem 1rem; border: 2px solid #2e9fff; border-radius: 6px; }
 .university-disclaimer { font-size: 0.8rem; opacity: 0.75; margin-top: 0.5rem; font-style: italic; }
-@media (max-width: 640px) { .topbar { flex-wrap: wrap; justify-content: center; } .university-notice { padding: 0.75rem 1rem; font-size: 0.9rem; } }
-
 /* ========================================
-   RESPONSIVE DESIGN - DESKTOP FIRST
+   RESPONSIVE DESIGN - MINIMAL MOBILE ADJUSTMENTS
+   Typography and Spacing Only
    ======================================== */
 
 /* Tablet (768px and below) */
 @media (max-width: 768px) {
-  /* Navigation: Mobile hamburger menu */
-  .nav-toggle { display: block; }
-  
-  nav { position: relative; width: 100%; }
-  
-  nav ul {
-    display: none;
-    flex-direction: column;
-    gap: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background: #fff;
-    border: 1px solid #d8e3ea;
-    border-top: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    max-height: 70vh;
-    overflow-y: auto;
-  }
-  
-  nav ul.active { display: flex; }
-  
-  nav li { width: 100%; border-bottom: 1px solid #e6eef3; }
-  nav li:last-child { border-bottom: none; }
-  
-  nav a {
-    width: 100%;
-    padding: 1rem 1.5rem;
-    display: block;
-  }
-  
-  nav a:hover, nav a:focus {
-    background: var(--muted);
-  }
-  
-  .topbar { padding: 1rem; }
-  
-  /* Hero section */
-  .hero {
-    grid-template-columns: 1fr;
-    padding: 2rem 1rem;
-    gap: 1.5rem;
-  }
-  
+  /* Typography adjustments */
   .hero h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.6rem; }
   
-  /* Panels and cards */
+  /* Spacing adjustments */
+  .topbar { padding: 1rem; }
+  .hero { padding: 2rem 1rem; }
   .panel { padding: 2rem 1rem; }
-  
-  .grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
+  .footer { padding: 1.5rem 1rem; }
   
   /* Forms */
-  form { max-width: 100%; }
-  
-  input, textarea, .btn {
-    font-size: 16px; /* Prevents zoom on iOS */
-  }
-  
-  /* Footer */
-  .footer {
-    padding: 1.5rem 1rem;
-    text-align: center;
-  }
-  
-  .footer-links {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
+  input, textarea, .btn { font-size: 16px; /* Prevents zoom on iOS */ }
   
   /* Modal */
   .modal { padding: 0.5rem; }
-  .modal-content { padding: 1.25rem; max-width: 100%; }
+  .modal-content { padding: 1.25rem; }
   
   /* Cookie banner */
   .cookie-banner {
@@ -124,31 +61,21 @@ input:focus, textarea:focus, button:focus, a:focus { outline: 3px solid #2e9fff;
     bottom: 0.5rem;
     font-size: 0.9rem;
   }
-  
-  .cookie-banner .actions {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
 }
 
 /* Mobile (480px and below) */
 @media (max-width: 480px) {
+  /* Typography adjustments */
   .hero h1 { font-size: 1.5rem; line-height: 1.2; }
   .hero p { font-size: 0.95rem; }
-  
   .eyebrow { font-size: 0.7rem; }
-  
-  .btn {
-    padding: 0.6rem 1rem;
-    font-size: 0.95rem;
-  }
-  
   .price { font-size: 1.4rem; }
-  
-  .panel { padding: 1.5rem 1rem; }
-  
   h2 { font-size: 1.5rem; }
   h3 { font-size: 1.2rem; }
+  
+  /* Spacing adjustments */
+  .btn { padding: 0.6rem 1rem; font-size: 0.95rem; }
+  .panel { padding: 1.5rem 1rem; }
 }
 
 /* Ensure no horizontal scroll */
@@ -160,19 +87,6 @@ body, html {
 img, svg, video {
   max-width: 100%;
   height: auto;
-}
-
-/* Touch target improvements */
-@media (hover: none) and (pointer: coarse) {
-  /* Touch devices */
-  a, button, .btn, input, select, textarea {
-    min-height: 44px;
-    min-width: 44px;
-  }
-  
-  nav a {
-    min-height: 48px;
-  }
 }
 
 .visually-hidden { position: absolute !important; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px); white-space: nowrap; }
