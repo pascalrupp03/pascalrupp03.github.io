@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StudyFlow – Webshop | Lumino Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="StudyFlow: Aufgabenplanung, Notizen, Lernfortschritt und PDF-Export. Einmalige Lizenz. Demo verfügbar." />
+  <meta name="color-scheme" content="light dark" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="topbar" role="banner">
+    <a class="brand" href="index.html" aria-label="Lumino Labs – Startseite">
+      <img src="assets/logo-word.svg" alt="StudyFlow Wortmarke" height="28" />
+    </a>
+    <nav aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html#features">Produkt</a></li>
+        <li><a href="about.html">Über uns</a></li>
+        <li><a href="trademarks.html">Marken</a></li>
+        <li><a href="license.html">Lizenz</a></li>
+        <li><a href="privacy.html">Datenschutz</a></li>
+        <li><a href="accessibility.html">Barrierefreiheit</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+      </ul>
+    </nav>
+    <a class="btn ghost" href="#pricing" aria-describedby="demo-note">Kostenlos testen</a>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-label="Produktvorstellung">
+      <div>
+        <p class="eyebrow">Digital Learning & Productivity</p>
+        <h1>StudyFlow: Master Your Learning. Achieve Your Goals.</h1>
+        <p>Organize tasks, manage notes, track learning progress, and export results as PDF. Built for university students, high school students, and self-learners.</p>
+        <div class="actions">
+          <a class="btn primary" id="cta" href="#pricing">Jetzt lizenzieren</a>
+          <button class="btn ghost" type="button" data-modal-open="demo">Kostenlos testen</button>
+        </div>
+        <p id="demo-note" class="visually-hidden">Demo ist rein exemplarisch, ohne echte Konten oder Daten.</p>
+      </div>
+      <figure aria-describedby="hero-caption">
+        <svg class="ui-mock" role="img" aria-labelledby="ui-title" viewBox="0 0 600 360">
+          <title id="ui-title">Mockup der StudyFlow Oberfläche</title>
+          <rect x="0" y="0" width="600" height="360" rx="16" fill="#ffffff"/>
+          <rect x="20" y="20" width="560" height="40" rx="8" fill="#e6eef3"/>
+          <rect x="20" y="80" width="260" height="240" rx="12" fill="#f8fbfd" stroke="#c8d6df"/>
+          <rect x="300" y="80" width="280" height="110" rx="12" fill="#f8fbfd" stroke="#c8d6df"/>
+          <rect x="300" y="200" width="280" height="120" rx="12" fill="#f8fbfd" stroke="#c8d6df"/>
+          <circle cx="60" cy="40" r="12" fill="#f5a524"/>
+          <circle cx="90" cy="40" r="12" fill="#0b2c3d"/>
+          <circle cx="120" cy="40" r="12" fill="#2e9fff"/>
+        </svg>
+        <figcaption id="hero-caption">Interface-Illustration (SVG), Demo ohne echte Nutzerdaten.</figcaption>
+      </figure>
+    </section>
+
+    <section id="features" class="panel" aria-label="Funktionen">
+      <h2>Funktionen</h2>
+      <ul class="grid">
+        <li><h3>Planung</h3><p>Aufgaben- und Studienpläne mit Fristen.</p></li>
+        <li><h3>Notizen</h3><p>Organisierte Notizverwaltung mit Tags.</p></li>
+        <li><h3>Fortschritt</h3><p>Tracke Lernziele und Meilensteine.</p></li>
+        <li><h3>PDF-Export</h3><p>Berichte und To-Dos als PDF.</p></li>
+      </ul>
+    </section>
+
+    <section id="pricing" class="panel muted" aria-label="Preismodell">
+      <h2>Lizenzierung</h2>
+      <div class="grid pricing">
+        <article class="card" aria-label="Demo-Version">
+          <h3>Demo</h3>
+          <p class="price">Kostenlos</p>
+          <ul>
+            <li>Mock-Funktionen</li>
+            <li>Keine Accounts</li>
+            <li>Kein Datenspeicher</li>
+          </ul>
+          <button type="button" class="btn ghost" data-modal-open="demo">Demo öffnen</button>
+        </article>
+        <article class="card" aria-label="Einmalige Lizenz">
+          <h3>Einmalige Lizenz</h3>
+          <p class="price">49 EUR einmalig</p>
+          <ul>
+            <li>Unbefristete Nutzung</li>
+            <li>Kleine Updates enthalten</li>
+            <li>Support per E-Mail</li>
+          </ul>
+          <button type="button" class="btn primary" data-modal-open="purchase">Jetzt kaufen (Mock)</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" aria-label="Hinweis zu Recht & Barrierefreiheit">
+      <h2>Rechtliches & Barrierefreiheit</h2>
+      <p>Die Seiten <a href="privacy.html">Datenschutz</a>, <a href="license.html">Lizenz</a>, <a href="impressum.html">Impressum</a>, <a href="trademarks.html">Marken</a> und <a href="accessibility.html">Barrierefreiheit</a> dokumentieren die rechtlichen Rahmenbedingungen. Prozesse sind rein demonstrativ.</p>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p>© 2025 Lumino Labs, Vienna. All rights reserved.</p>
+    <p class="university-disclaimer">📚 Note: This webshop is created as part of a university project. No real purchases are processed.</p>
+    <div class="footer-links">
+      <a href="accessibility.html">Barrierefreiheit</a>
+      <a href="license.html">Lizenz</a>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="credits.html">Credits & Lizenzen</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal-demo" role="dialog" aria-modal="true" aria-labelledby="demo-title" hidden>
+    <div class="modal-content">
+      <h2 id="demo-title">Demo-Modus</h2>
+      <p>Dies ist ein Mock. Keine Speicherung, keine Accounts. Interaktionen dienen nur der Veranschaulichung.</p>
+      <button class="btn" data-modal-close>Schließen</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-purchase" role="dialog" aria-modal="true" aria-labelledby="purchase-title" hidden>
+    <div class="modal-content">
+      <h2 id="purchase-title">Kauf (Mock)</h2>
+      <form aria-label="Kaufformular (Demo)">
+        <label for="email-buy">E-Mail</label>
+        <input id="email-buy" type="email" required />
+
+        <label for="agree-license">
+          <input id="agree-license" type="checkbox" required /> Ich akzeptiere die <a href="license.html">Lizenzbedingungen</a>
+        </label>
+        <button type="submit" class="btn primary">Zahlung starten (ohne Funktion)</button>
+      </form>
+      <button class="btn" data-modal-close>Abbrechen</button>
+    </div>
+  </div>
+
+  <div class="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie-Hinweis" hidden>
+    <p>Cookies (Demo): Funktionale erforderlich, optionale Analytics. Wählen Sie Ihre Präferenzen.</p>
+    <div class="actions">
+      <label><input type="checkbox" id="cookie-functional" checked disabled /> Funktionale (erforderlich)</label>
+      <label><input type="checkbox" id="cookie-analytics" /> Analytics (optional)</label>
+      <button class="btn primary" id="cookie-save">Speichern</button>
+    </div>
+  </div>
+
+  <script src="scripts.js" defer></script>
+  <!-- Optional Dev: axe-core audit if ?axe in URL -->
+  <script>
+    (function(){
+      if (new URLSearchParams(location.search).has('axe')) {
+        var s=document.createElement('script');
+        s.src='https://cdnjs.cloudflare.com/ajax/libs/axe-core/4.7.1/axe.min.js';
+        s.onload=function(){ axe.run(document, {}, function(err, results){ console.log('axe results', results); }); };
+        document.head.appendChild(s);
+      }
+    })();
+  </script>
+</body>
+</html>

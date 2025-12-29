@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="40" viewBox="0 0 220 40" role="img" aria-labelledby="title desc">
+  <title id="title">StudyFlow Wortmarke</title>
+  <desc id="desc">Textlogo mit Akzentpunkt</desc>
+  <rect width="220" height="40" rx="8" fill="#ffffff" />
+  <text x="12" y="26" font-family="Atkinson Hyperlegible, Arial, sans-serif" font-size="20" fill="#0b2c3d">Study<tspan fill="#2e9fff">Flow</tspan></text>
+  <circle cx="200" cy="20" r="4" fill="#f5a524" />
+</svg>

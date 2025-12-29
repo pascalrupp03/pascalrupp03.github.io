@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt – Lumino Labs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+  <header class="topbar">
+    <a class="brand" href="index.html"><img src="assets/logo-word.svg" alt="StudyFlow Wortmarke" height="28" /></a>
+    <nav aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="index.html#features">Produkt</a></li>
+        <li><a href="privacy.html">Datenschutz</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main" class="panel">
+    <h1>Kontakt</h1>
+    <p>Sie erreichen Lumino Labs über das Kontaktformular. Alle Eingaben sind <strong>Demo</strong> und werden nicht gesendet.</p>
+    <form aria-label="Kontaktformular (Demo)">
+      <label for="name">Name</label>
+      <input id="name" name="name" required />
+
+      <label for="email">E‑Mail</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="msg">Nachricht</label>
+      <textarea id="msg" name="message" rows="4" required></textarea>
+
+      <div class="hint" id="privacy-hint">Mit Senden bestätigen Sie den <a href="privacy.html">Datenschutzhinweis</a>.</div>
+      <button type="submit" class="btn primary">Senden (Mock)</button>
+    </form>
+  </main>
+  <footer class="footer">
+    <p>© 2025 Lumino Labs, Vienna. All rights reserved.</p>
+    <p class="university-disclaimer">📚 Note: This webshop is created as part of a university project. No real purchases are processed.</p>
+    <div class="footer-links">
+      <a href="accessibility.html">Barrierefreiheit</a>
+      <a href="license.html">Lizenz</a>
+      <a href="privacy.html">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="credits.html">Credits & Lizenzen</a>
+    </div>
+  </footer>
+</body>
+</html>
